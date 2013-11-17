@@ -33,6 +33,9 @@ Technology
 |               | require.js  |
 |               | ACE Editor  |
 
+##Screenshots
+
+![editor.diki.io welcome](http://editor.diki.io/images/screenshots/1.png);
 ##Features
 
 - view folders/files on your remote server
