@@ -12,24 +12,37 @@
                             \_/\_/ |_|\__|_| |_| |____/|_|     |_| |_|       
                                                                                                         
 
+[##demo](http://editor.diki.io)
+
 Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a browser-based code editor 
 together with a SFTP connection
 
 Many thanks to https://github.com/ajaxorg/ace (this project would not exist without it) 
 and https://github.com/mscdex/ssh2 (for doing heavy work on server)
 
+Technology
+------------
+
+| On The Server | On The Client  |
+| ------------- | -------------- |
+| Express       | Bootstrap 2    |
+| ssh2          | Backbone.js    |
+|               | jQuery         |
+|               | Underscore.js  |
+|               | require.js  |
+|               | ACE Editor  |
+
 ##Features
 
 - view folders/files on your remote server
 - edit,delete files and create new ones
 - delete/create folders on your remote server
-- autocomplete (thanks to https://github.com/ajaxorg/ace/pull/1189)
+- a nice autocomplete (thanks to https://github.com/ajaxorg/ace/pull/1189)
 
 ##Usage
 
 Self hosting is strongly adviced, still you can start a SFTP connection and start to use from http://editor.diki.io. 
-Promise nothing kept about your connection and session, but i should warn you that no security concern taken into account on this demo,
-take your own risk :/
+Promise nothing kept about your connection and session,
 
 ##To install and run TePe
 
@@ -41,4 +54,4 @@ take your own risk :/
 
 ##Why did i do it? 
 
-Because I like to create desktop like applications working on browsers.
+Because I like to implement desktop like applications on browsers.
