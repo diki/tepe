@@ -12,7 +12,8 @@
                             \_/\_/ |_|\__|_| |_| |____/|_|     |_| |_|       
                                                                                                         
 
-[##demo](http://editor.diki.io)
+[demo](http://editor.diki.io)
+-----------------------------
 
 Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a browser-based code editor 
 together with a SFTP connection
