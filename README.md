@@ -35,7 +35,10 @@ Technology
 
 ##Screenshots
 
-![editor.diki.io welcome](http://editor.diki.io/images/screenshots/1.png);
+![editor.diki.io welcome](http://editor.diki.io/images/screenshots/1.png)
+![editor.diki.io connect](http://editor.diki.io/images/screenshots/3.png)
+![editor.diki.io connected](http://editor.diki.io/images/screenshots/4.png)
+
 ##Features
 
 - view folders/files on your remote server
