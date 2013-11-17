@@ -1,0 +1,4 @@
+node_modules/
+.monitor
+Makefile
+sftp-config.json
