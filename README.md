@@ -20,10 +20,10 @@ and https://github.com/mscdex/ssh2 (for doing heavy work on server)
 
 ##Features
 
-    - view folders/files on your remote server
-    - edit,delete files and create new ones
-    - delete/create folders on your remote server
-    - autocomplete (thanks to https://github.com/ajaxorg/ace/pull/1189)
+- view folders/files on your remote server
+- edit,delete files and create new ones
+- delete/create folders on your remote server
+- autocomplete (thanks to https://github.com/ajaxorg/ace/pull/1189)
 
 ##Usage
 

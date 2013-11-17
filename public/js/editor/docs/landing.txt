@@ -27,8 +27,8 @@ Self hosting is strongly adviced, still you can start a SFTP connection and star
 Promise nothing kept about your connection and session, but i should warn you that no security concern taken into account on this demo
 
 To install and run TePe
-  $ git clone https://github.com/diki/TePe.git
-  $ cd TePe
+  $ git clone https://github.com/diki/tepe.git
+  $ cd tepe
   $ npm install
   $ npm start 
 
