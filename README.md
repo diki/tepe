@@ -45,7 +45,7 @@ Technology
 Self hosting is strongly adviced, still you can start a SFTP connection and start to use from http://editor.diki.io. 
 Promise nothing kept about your connection and session,
 
-##To install and run TePe
+###To install and run TePe
 
     $ git clone https://github.com/diki/TePe.git
     $ cd noditor
