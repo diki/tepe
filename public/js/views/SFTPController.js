@@ -174,6 +174,7 @@ define([
             });
 
             $("#start-sftp").click(function(e){
+                $("#start-sftp").attr("disabled", true);
                 console.log("start sftp event");
                 e.preventDefault();
                 $.ajax({
@@ -197,6 +198,11 @@ define([
                         // var FileTreeView = require("js/views/FileTreeView");
                         window.fileTreeView = new FileTreeView(resp.tree);
                         $("#connectModal").modal("hide");
+                    }, 
+
+                    error : function(resp) {
+                        window.alert(resp.responseText);
+                        $("#start-sftp").attr("disabled", false);
                     }
                 });
                 return false;

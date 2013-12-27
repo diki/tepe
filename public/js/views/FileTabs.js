@@ -93,7 +93,7 @@ define([
                 $('#' + id + '_tab').addClass('active');
             }
             this.$el.addClass('filled');
-            this.setActiveTab(id);
+            this.setActiveTab(id, true);
         }
         , openTab : function(e) {
             // if($(e.target).is('span')) {
@@ -102,13 +102,19 @@ define([
             $('li', this.el).removeClass('active');
             $(e.target).closest('li').addClass('active');
             var fileId = $(e.target).closest('li').attr('id').split('_')[0];
-            this.setActiveTab(fileId);
+            $('.file-selected').removeClass('file-selected');
+            $('#' + fileId).addClass('file-selected');
+
+            this.showFileRecursive($('#' + fileId));
+
+            console.log(fileId);
+            this.setActiveTab(fileId, false);
         }
         //set session (it should be already in sessions collection)
-        , setActiveTab : function(fileId) {
+        , setActiveTab : function(fileId, moveCursor) {
             var session = this.sessions.get(fileId).get('session');
             window.env.editor.setSession(session);
-            this.focusSession();
+            this.focusSession(moveCursor);
         }
         //remove tab after click "x"
         , closeTab : function (e) {
@@ -160,11 +166,18 @@ define([
             }
             target.parent().remove(); 
         }
-        , focusSession : function () {
+        , focusSession : function (moveCursor) {
             window.env.editor.focus();
             var session = env.editor.session;
             count = session.getLength();
-            window.env.editor.gotoLine(count, session.getLine(count-1).length);
+            if(moveCursor) {
+                window.env.editor.gotoLine(count, session.getLine(count-1).length);
+            }
+        }, showFileRecursive : function(el) {
+            if(el.parent().is(':visible')) return;
+            el.parent().show();
+            el.parent().prev().show();
+            this.showFileRecursive(el.parent());
         }
 
     });

@@ -81,7 +81,9 @@ exports.start = function(req, res) {
 
         console.log("sftp ready")
         sftpConnection = sftp
-        if (err) {console.log("error");throw err;}
+        if (err) {
+          res.send('Could not create SFTP connection', 500);
+        }
         sftp.on('end', function() {
           console.log('SFTP :: SFTP session closed');
         });
@@ -96,6 +98,7 @@ exports.start = function(req, res) {
     });
     c.on('error', function(err) {
       console.log('Connection :: error :: ' + err);
+      res.send('Authentication failure', 500);
     });
     c.on('end', function() {
       console.log('Connection :: end');

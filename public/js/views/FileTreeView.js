@@ -15,7 +15,7 @@ define([
           "click .tab-link": "updateEditorValue"
       },
 
-      initialize: function(options){
+      initialize: function(options, isRootFolder){
           _.bindAll(this, "render", "createFolderStructure", "toggleFolderContent", "openFile", "updateEditorValue");
           this.options = options;
           this.fileIndex = 0;
@@ -45,10 +45,10 @@ define([
           '</div>'
           );
           this.$el.append(rootNode);
-          this.buildFileTree(rootNode, this.options);
+          this.buildFileTree(rootNode, this.options, true);
       },
 
-      buildFileTree: function(el, options){
+      buildFileTree: function(el, options, isRootFolder){
         var self = this;
         var tr = '&#9660;';
         var level = el.parents('.tree-node').length+1;
@@ -62,7 +62,7 @@ define([
             '<div class="tree-node" style="padding-left:12px; line-height:30px; font-size:15px;">' +
               '<div class="name-info">' +
                 '<span class="toggle-folder" data-fetched="0" data-location="'+name+'" title="'+name+'">'+ra+'</span>' +
-                '<span class="node-name">' + n + '</span>' +
+                '<span class="node-name">'  + n + '</span>' +
               '</div>' +
               '<div class="folders-container" style="display:none;">'+
               '</div>' +
@@ -140,6 +140,7 @@ define([
           // console.log(999);
           // $(e.target).parent().parent().find(".folders-container").first().toggle();
           // $(e.target).parent().parent().find(".files-container").last().toggle();
+          
           var self = this;
 
           var target = $(e.target)
@@ -155,7 +156,14 @@ define([
             dataFetched = target.attr("data-fetched");
             dataLocation = target.attr("data-location");
           }
+
+          if(dataFetched === '2') {
+            return;
+          }
           if(dataFetched === '0'){
+
+            target.attr('data-fetched', '2');
+
             $.ajax({
               type: "POST",
               url: "/sftp/dir",
@@ -193,7 +201,10 @@ define([
 
         var self = this;
         var fileName = $(e.target).attr('data-location');
+        $('.file-selected').removeClass('file-selected');
+        $(e.target).addClass('file-selected');
 
+        console.log("eeeeeee");
         window.app.FileTabs.trigger('add', {
             id : $(e.target).attr('id')
             , location : $(e.target).attr('data-location')

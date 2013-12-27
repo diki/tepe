@@ -30,8 +30,6 @@
 define(function(require, exports, module) {
     "use strict";
 
-    console.log("initializing editor");
-
     require("ace/lib/fixoldbrowsers");
 
     var config = require("ace/config");
@@ -42,7 +40,7 @@ define(function(require, exports, module) {
 
     var $ = require("jquery");
 
-    var SFTPController = require("js/views/Modals");
+    var SFTPController = require("js/views/SFTPController");
     window.SFTPController = new SFTPController();
 
     //file tabs view;

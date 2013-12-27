@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a browser-based code editor together with a SFTP connection">
+    <meta name="description" content="Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a online code editor together with a SFTP connection">
+    <meta name="keywords" content="online code editor, SFTP, sublime text, coding, autocomplete">    
     <meta name="author" content="mustafa dikici">
     <title>TePe - online code editor with SFTP</title>
     <!--
@@ -175,12 +176,12 @@
                       <option value="ace/theme/chaos">Chaos</option>
                       <option value="ace/theme/clouds_midnight">Clouds Midnight</option>
                       <option value="ace/theme/cobalt">Cobalt</option>
-                      <option value="ace/theme/idle_fingers">idleFingers</option>
+                      <option value="ace/theme/idle_fingers" selected="selected">idleFingers</option>
                       <option value="ace/theme/kr_theme">krTheme</option>
                       <option value="ace/theme/merbivore">Merbivore</option>
                       <option value="ace/theme/merbivore_soft">Merbivore Soft</option>
                       <option value="ace/theme/mono_industrial">Mono Industrial</option>
-                      <option value="ace/theme/monokai" selected="selected">Monokai</option>
+                      <option value="ace/theme/monokai">Monokai</option>
                       <option value="ace/theme/pastel_on_dark">Pastel on dark</option>
                       <option value="ace/theme/solarized_dark">Solarized Dark</option>
                       <option value="ace/theme/terminal">Terminal</option>
@@ -416,6 +417,20 @@
         </div>
       </div>
     </div>
+
+<!-- AddThis Button BEGIN -->
+<!-- <div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="position:fixed; z-index: 12345; bottom: 4px; width:280px;">
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-512f82111686f469"></script> -->
+<!-- AddThis Button END --> 
+
 <!-- <script src="http://cdn.jotfor.ms/static/feedback2.js?3.1.334" type="text/javascript">
   new JotformFeedback({
      formId   : "32988266147871",
@@ -430,20 +445,13 @@
      height   : 150
   });
 </script> -->
-<script type="text/javascript"> 
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-35294536-1']);
-  _gaq.push(['_trackPageview']);
-  _gaq.push(['_setDomainName', 'diki.io']);
-  _gaq.push(['_setAllowLinker', true]);
-  
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-46724677-1', 'diki.io');
+  ga('send', 'pageview');
 </script>
 
     <script type="text/javascript">
