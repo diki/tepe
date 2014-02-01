@@ -273,7 +273,7 @@
 }
 .name-info {
     line-height: 22px;
-    font-size: 14px;
+    font-size: 13px;
 }
 .name-info:hover{
     /*color: #EEE;*/
@@ -345,7 +345,7 @@
 }
 
 li:not(.active) {
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 #editor-tabs li span.tab-file-name {
