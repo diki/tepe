@@ -11,7 +11,7 @@
                             \_/\_/ |_|\__|_| |_| |____/|_|     |_| |_|       
                                                                                                         
 
-Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a browser-based code editor with an SFTP connection
+Inspired from Sublime Text and SSH plugin, TePe is a humble attempt to create a browser-based code editor with an SFTP connection.
 
 Many thanks to https://github.com/ajaxorg/ace (this project would not exist without it) 
 and https://github.com/mscdex/ssh2 (for doing heavy work on server)
@@ -24,7 +24,7 @@ With TePe you can:
 
 
 Self hosting is strongly adviced, still you can start a SFTP connection and start to use it just from here. 
-Promise nothing kept about your connection and session, but i should warn you that no security concern taken into account on this demo
+Promise nothing kept about your connection and session still keep in mind that no security concern taken into account on this demo.
 
 To install and run TePe
   $ git clone https://github.com/diki/tepe.git

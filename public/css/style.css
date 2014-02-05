@@ -253,7 +253,7 @@
 
 .file-name {
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 25px;
 }
 
@@ -433,6 +433,10 @@ a#connect-modal:hover {
   color: #FFF;
   padding-left: 4px;
   /*text-shadow: 0 0 1px #ddd;*/
+}
+
+#connect-modal:hover {
+  text-shadow: 0 0 2px #333;
 }
 
 
