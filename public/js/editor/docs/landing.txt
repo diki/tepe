@@ -23,7 +23,7 @@ With TePe you can:
     * autocomplete (thanks to https://github.com/ajaxorg/ace/pull/1189)
 
 
-Self hosting is strongly adviced, still you can start a SFTP connection and start to use it just from here. 
+Self hosting is adviced, still you can start an SFTP connection and start to use it just from here. 
 Promise nothing kept about your connection and session still keep in mind that no security concern taken into account on this demo.
 
 To install and run TePe
