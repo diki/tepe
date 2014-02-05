@@ -26,7 +26,7 @@ With TePe you can:
 Self hosting is adviced, still you can start an SFTP connection and start to use it just from here. 
 Promise nothing kept about your connection and session still keep in mind that no security concern taken into account on this demo.
 
-To install and run TePe
+To install and run TePe first you need to setup nodejs. Run following commands: 
   $ git clone https://github.com/diki/tepe.git
   $ cd tepe
   $ npm install
