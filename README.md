@@ -64,7 +64,3 @@ Promise nothing kept about your connection and session,
     $ npm install
     $ npm start 
     TePe should be running at http://localhost:3000
-
-##Why did i do it? 
-
-Because I like to implement desktop like applications on browsers.
