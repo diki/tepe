@@ -64,3 +64,7 @@ Promise nothing kept about your connection and session,
     $ npm install
     $ npm start 
     TePe should be running at http://localhost:3000
+
+##License
+
+MIT
