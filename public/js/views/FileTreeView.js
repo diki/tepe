@@ -55,7 +55,7 @@ define([
 
         var ra = '&#9654;';
         //el.append(rootNode);
-        _.each(options.folders, function(name){
+        _.each(options.folders.sort(), function(name){
           var names = name.split('/');
           var n = names[names.length-1];
           el.find(".folders-container").first().append(
@@ -72,7 +72,7 @@ define([
           );
         });
 
-        _.each(options.files, function(name){
+        _.each(options.files.sort(), function(name){
           var names = name.split('/');
           var n = names[names.length-1];
           el.find(".files-container").last().append(
