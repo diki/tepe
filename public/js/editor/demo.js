@@ -279,14 +279,11 @@ define(function(require, exports, module) {
     /*********** manage layout ***************************/
     var consoleHeight = 20;
     function onResize() {
-        console.log("resize the shit");
         var left = env.split.$container.offsetLeft;
         var width = document.documentElement.clientWidth;
-        //container.style.width = "100%";
         container.style.height = document.documentElement.clientHeight - consoleHeight - 20 + 'px';
         env.split.resize();
 
-        console.log("window resizen ne la", width);
         consoleEl.style.width = width - 320 + "px";
 
         //var editMenu = document.getElementById("menu-toggle");
@@ -650,6 +647,6 @@ env.editor.setOptions({
         var success = snippetManager.expandWithTab(editor);
         if (!success)
             editor.execCommand("indent");
-    })
+    });
 
 });
