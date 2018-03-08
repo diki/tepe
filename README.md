@@ -54,7 +54,7 @@ Promise nothing kept about your connection and session,
 
 - git support
 - create project with git clone
-- sublime like extension manager
+- sublime like extension manager :)
 
 ###To install and run TePe
 
